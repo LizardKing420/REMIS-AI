@@ -33,3 +33,6 @@ TestResults.xml
 datasets/data/
 datasets/raw_data/
 datasets/tmp/
+
+# Ignore all of the log files
+*.log
