@@ -62,11 +62,9 @@ Clone this repository to your Raspberry Pi:
 ```bash
 mkdir -p ~/repos/
 cd ~/repos/
-git clone <REPO_URL>
-cd remis-ai
+git clone https://github.com/LizardKing420/REMIS-AI.git
+cd REMIS-AI
 ```
-
-Replace `<REPO_URL>` with the actual URL of the repository.
 
 ---
 
