@@ -5,7 +5,7 @@ model = YOLO("yolov8n.yaml")
 
 # Train the model
 results = model.train(
-    data="/home/RemisAI/repos/train_model/yolo/config.yaml",  # path to dataset YAML
+    data="/home/RemisAI/repos/train_model/config.yaml",  # path to dataset YAML
     epochs=300,  # number of training epochs
     task="detect",
     # imgsz=640,  # training image size
