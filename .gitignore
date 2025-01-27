@@ -20,3 +20,16 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# ignore the git folder
+.git/
+
+# Ignore all of the git backup files
+*~
+*.swp
+*.swo
+
+# Don't upload the training data to git
+datasets/data/
+datasets/raw_data/
+datasets/tmp/
