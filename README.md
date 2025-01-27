@@ -75,16 +75,20 @@ Replace `<REPO_URL>` with the actual URL of the repository.
 Ensure your project directory is structured as follows for YOLO to work correctly:
 
 ```
-data/
-    images/
-        train/
-        val/
-    labels/
-        train/
-        val/
-scripts/
+datasets/
+    data/
+        images/
+            train/
+            val/
+        labels/
+            train/
+            val/
     check_data.sh
     move_train_to_val.sh
+    tmp/
+        ...
+    rawdata/
+        ...
 ```
 
 ---
