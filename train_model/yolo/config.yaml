@@ -1,0 +1,17 @@
+path: /home/repos/RemisAI/datasets/data  
+train: images/train 
+val: images/train
+
+# Classes
+names: #TODO:edit
+  0: Werkstueck_Scheibe
+  1: Werkstueck_Zylinder
+  2: Hebel
+  3: Mittelkonsole
+  4: Ablageflaeche
+  5: Pressstueck_klein
+  6: Pressstueck_gross
+  7: Presstueck_mittel
+  8: Raeder
+  9: PresseGesamt
+  

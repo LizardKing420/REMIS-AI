@@ -46,11 +46,12 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Install YOLO on Raspberry Pi
+### 3. Install YOLO and other libaries in the virtual enviorment
 
 Install the required YOLO dependencies and set up the YOLOv8 model:
 
 ```bash
+bash ~/repos/REMUS-AI/misc/setup/install_venv.sh
 pip install --upgrade pip
 pip install ultralytics
 ```
