@@ -81,10 +81,20 @@ datasets/
     data/
         images/
             train/
+                pic1.jpg
+                pic2.jpg
+                ...
             val/
+                pic3.jpg
+                ...
         labels/
             train/
+                pic1.txt
+                pic2.txt
+                ...
             val/
+                pic3.txt
+                ...
     check_data.sh
     move_train_to_val.sh
     tmp/
