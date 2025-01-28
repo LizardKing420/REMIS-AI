@@ -110,14 +110,21 @@ cd ./datasets/
 bash move_train_to_val.sh
 ```
 
-### 3. Training the model
+### 3. Activate the Virtual Environment
+Activate the virtual environment with the following command:
+
+```bash
+source venv/bin/activate
+``` 
+
+### 4. Training the model
 This assumes the user has annoted the data, and put it in the `./datasets/data/` folders as explained in the section `Directory Structure` above
 
 Run the `train.sh` script to run the nano v8 modell of the neural network (the script is set to run the modell on 500 cycles, this can be eassily modified):
 
 ```bash
 cd ./train_model/
-bash train.sh
+python3 train.py
 ```
 
 ---
