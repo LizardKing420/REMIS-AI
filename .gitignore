@@ -30,7 +30,11 @@ TestResults.xml
 *.swo
 
 # Don't upload the training data to git
-datasets/data/
+
+datasets/data/images/train/*
+datasets/data/images/val/*
+datasets/data/labels/train/*
+datasets/data/labels/val/*
 datasets/raw_data/
 datasets/tmp/
 
