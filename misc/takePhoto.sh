@@ -2,18 +2,21 @@
 
 #Made by Ante Martic on 2025.01.09. 
 #This script takes care of the raspberry pi cam and takes photos and saves them with appropriate naming scheme
-
 #Promt user to ask which part is on the photo
 
 #################################################################################
-#			activete the script with this command			#
-# bash takePhoto.sh
+#			activete the script with this command			                    #
+# bash takePhoto.sh                                                             #
 #################################################################################
-#
+RED='\033[1;31m'
+GREEN='\033[1;32m'
+NC='\033[0m' # No Color
+
 echo "---------------------------------------------------"
 echo "Please write the name of the primary part on the series of photos. In a case of multiple objects on the photo series, write them after another."
 read file 
-path="/home/RemisAI/Bilder/Rohbilder"
+path="/home/repos/RemisAI/datasets/raw_data"
+echo -e "Data will be saved in ${RED}$path${NC}"
 mkdir -v -p $path
 
 user_input=""
@@ -35,7 +38,7 @@ photo_counter=0
 
 while true; do
     # Show preview using libcamera-vid (a video preview without recording)
-    libcamera-vid --preview=0,0,1920,1080 -t 0 --vflip=1 &
+    libcamera-vid --preview=0,0,640,640 -t 0 --vflip=1 & 
 
     # Capture the process ID of libcamera-vid
     preview_pid=$!
@@ -53,7 +56,7 @@ while true; do
     # Stop the preview and capture the photo
     kill $preview_pid
     file_name_full="$path/$file$(printf "%03d" $photo_counter).jpg" 
-    libcamera-jpeg -n -o "$file_name_full"  --vflip=1 --width=1920 --height=1080
+    libcamera-jpeg -n -o "$file_name_full"  --vflip=1 --width=640 --height=640
 
     # Increment the photo counter
     photo_counter=$((photo_counter + 1))
