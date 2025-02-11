@@ -43,7 +43,7 @@ Set up a virtual environment to isolate project dependencies:
 
 ```bash
 sudo apt install python3-venv -y
-mkdir -p ~/envs/remis-ai
+mkdir -p ~/envs/
 cd ~/envs/
 python3 -m venv remis-ai
 source ~/envs/remis-ai/bin/activate
