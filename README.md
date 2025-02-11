@@ -41,9 +41,10 @@ Set up a virtual environment to isolate project dependencies:
 ```bash
 sudo apt install python3-venv -y
 mkdir -p ~/envs/remis-ai
-cd ~/envs/remis-ai
-python3 -m venv venv
-source venv/bin/activate
+cd ~/envs/
+python3 -m venv remis-ai
+source ~/envs/remis-ai/bin/activate
+which python
 ```
 
 ### 3. Install YOLO and other libaries in the virtual enviorment
@@ -53,7 +54,7 @@ Install the required YOLO dependencies and set up the YOLOv8 model:
 ```bash
 bash ~/repos/REMUS-AI/misc/setup/install_venv.sh
 pip install --upgrade pip
-pip install ultralytics
+pip install ultralytics picamera
 ```
 
 ### 4. Clone the Repository
