@@ -35,4 +35,16 @@ Navigate to the `datasets` directory and execute the script:
 ```bash
 cd ./datasets/
 bash move_train_to_val.sh
+```
+
+## Shift Labeling  
+CVAT.ai has a known issue where the starting index for labeling is **1 instead of 0**, which **YOLO requires**. To fix this, a script is provided that **corrects every single label file** by **shifting all labels down by 1**. **Use with caution!**  
+
+### How to Run  
+Navigate to the `datasets` directory and execute the script:  
+```bash
+cd ./datasets/
+bash shift_labels.sh
+```
+
 

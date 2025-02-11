@@ -4,6 +4,8 @@ A Raspberry Pi-based machine assembly verification system that uses image recogn
 
 The project leverages YOLOv8, an advanced object detection model, for accurate and efficient verification.
 
+![cad_assembly_01](https://github.com/user-attachments/assets/1f9701c1-089f-4af0-98e1-3c9f1d06a616)
+
 ---
 
 ## Hardware
@@ -15,6 +17,7 @@ Below is the list of hardware used in the project. Many components, such as the 
 - **64 GB SD Card**
 - **Raspberry Pi Camera 3** (Regular Version)
 - **OLED Display 2.7''** (Joy-IT, optional)
+- **3D-printed PLA Casing** (PART file avalable, optional)
 
 ---
 
@@ -79,10 +82,20 @@ datasets/
     data/
         images/
             train/
+                pic1.jpg
+                pic2.jpg
+                ...
             val/
+                pic3.jpg
+                ...
         labels/
             train/
+                pic1.txt
+                pic2.txt
+                ...
             val/
+                pic3.txt
+                ...
     check_data.sh
     move_train_to_val.sh
     tmp/

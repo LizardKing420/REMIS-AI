@@ -1,11 +1,11 @@
 #!bin/bash
 
-#Made by Ante Martic on 2025.01.09. 
+#Made by LizardKing on 2025.01.09. 
 #This script takes care of the raspberry pi cam and takes photos and saves them with appropriate naming scheme
 #Promt user to ask which part is on the photo
 
 #################################################################################
-#			activete the script with this command			                    #
+#			activate the script with this command			                    #
 # bash takePhoto.sh                                                             #
 #################################################################################
 RED='\033[1;31m'
