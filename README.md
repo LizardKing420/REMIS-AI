@@ -1,10 +1,10 @@
 # REMIS-AI
 
+![testrun](testrun.gif)
+
 A Raspberry Pi-based machine assembly verification system that uses image recognition to ensure all parts are correctly installed for safe operation. The system captures images, utilizes machine learning to check alignment and part presence, and triggers alerts when problems are detected.
 
-The project leverages YOLOv8, an advanced object detection model, for accurate and efficient verification.
-
-![cad_assembly_01](https://github.com/user-attachments/assets/1f9701c1-089f-4af0-98e1-3c9f1d06a616)
+The project leverages YOLOv8n, an advanced object detection model, for accurate and efficient verification.
 
 ---
 
@@ -18,6 +18,8 @@ Below is the list of hardware used in the project. Many components, such as the 
 - **Raspberry Pi Camera 3** (Regular Version)
 - **OLED Display 2.7''** (Joy-IT, optional)
 - **3D-printed PLA Casing** (PART file avalable, optional)
+
+![cad_assembly_01](https://github.com/user-attachments/assets/1f9701c1-089f-4af0-98e1-3c9f1d06a616)
 
 ---
 
